@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/jason-live/scloud-config-repo.git
+          username: 348842258@qq.com
+          password: yy52101989
+          basedir: /Users/jason/Develop/jason-java/scloud-config/basedir
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+
