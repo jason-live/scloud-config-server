@@ -9,8 +9,10 @@ spring:
           username: 348842258@qq.com
           password: yy52101989
           basedir: /Users/jason/Develop/jason-java/scloud-config/basedir
+server:
+  port: 8081
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:8761/eureka/
+      defaultZone: http://eureka:8761/eureka/
 
