@@ -1,6 +1,6 @@
 {
   "name": "scloud-config",
-  "version": "1.6.7",
+  "version": "1.12.7-next.1",
   "description": "",
   "main": "index.js",
   "scripts": {

@@ -5,19 +5,14 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/jason-live/scloud-config-repo.git
-          username: 348842258@qq.com
+          uri: http://gitlab.fuliaoyi.com:8081/demo/scloud-config-repo.git
+          username: yuanyang@fuliaoyi.com
           password: yy52101989
-          basedir: /Users/jason/Develop/jason-java/scloud-config/basedir
+server:
+  port: 8081
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:8761/eureka/
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-  endpoint:
-    health:
-      show-details: always
+      defaultZone: http://eureka-master:8761/eureka/,http://eureka-assist:8762/eureka/
+  instance:
+    prefer-ip-address: true
